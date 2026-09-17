@@ -20,7 +20,7 @@ let pagamentoStatus = "Aguardando"
 let estoqueDisponivel = "Aguardando"
 
 if (estoque >= quantidade){
-    estoqueDisponivel = "Estoque disponível"
+    estoqueDisponivel = "Sim"
     statusPedido = "Pedido disponível para finalização"
 } else{
     statusPedido = "Pedido não pode ser finalizado por falta de estoque"
