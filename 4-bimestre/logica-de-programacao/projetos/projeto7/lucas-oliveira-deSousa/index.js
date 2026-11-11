@@ -73,11 +73,10 @@ Produtos com estoque baixo: ${produtosComEstoqueBaixo}`
 
 console.log(resumo)
 
-// exportando os dados
 module.exports = {
     catalogo,
     limiteEstoqueBaixo,
-    produtoMaisCaro,
+    produtoMaisCaro: produtoMaisCaro.nome,
     estoqueTotal,
     produtosComEstoqueBaixo,
     resumo
