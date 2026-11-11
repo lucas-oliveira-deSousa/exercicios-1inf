@@ -36,8 +36,6 @@ for (let i = 0; i < catalogo.length; i++) {
 
 produtoMaisCaro = produtoMaisCaro.nome
 
-let estoqueTotal = 0
-
 for (let i = 0; i < catalogo.length; i++) {
     estoqueTotal = estoqueTotal + catalogo[i].estoque
 }
