@@ -2,11 +2,11 @@ const prompt = require("prompt-sync")()
 let precoUnitario = Number(prompt("Digite o preço unitário: "))
 let quantidade = Number(prompt("Digite a quantidade: "))
 let formaPagamento = prompt("Digite a forma de pagamento: ")
-
+//calcular subtotal
 const calcularSubtotal = (preco, quantidade) => {
     return preco * quantidade
 }
-
+//frete
 function calcularFrete(subtotal) {
     if (subtotal >= 100) {
         return 0
@@ -14,7 +14,7 @@ function calcularFrete(subtotal) {
         return 10
     }
 }
-
+//desconto
 function calcularDesconto(subtotal, formaPagamento) {
     let percentual = 0
 
@@ -34,7 +34,7 @@ function calcularDesconto(subtotal, formaPagamento) {
 
     return subtotal * percentual / 100
 }
-
+//valor total 
 function calcularTotal(preco, quantidade, formaPagamento) {
     let subtotal = calcularSubtotal(preco, quantidade)
     let frete = calcularFrete(subtotal)
