@@ -47,7 +47,7 @@ let subtotal = calcularSubtotal(precoUnitario, quantidade)
 let frete = calcularFrete(subtotal)
 let desconto = calcularDesconto(subtotal, formaPagamento)
 let total = calcularTotal(precoUnitario, quantidade, formaPagamento)
-
+//resumo final 
 let resumo = `
 ----- RESUMO DO PEDIDO -----
 Subtotal: ${subtotal}
